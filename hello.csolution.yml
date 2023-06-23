@@ -1,0 +1,22 @@
+solution:
+  description: Simple Hello World example for MIMXRT1060-EVKB
+  created-for: CMSIS-Toolbox@2.0.0
+  # cdefault:
+  compiler: AC6
+  # compiler: GCC
+
+  target-types:
+    - type: MIMXRT1060-EVKB
+      board: NXP::MIMXRT1060-EVKB
+
+  build-types:
+    - type: Debug
+      debug: on
+      optimize: none
+
+    - type: Release
+      debug: off
+      optimize: balanced
+
+  projects:
+    - project: ./hello.cproject.yml
